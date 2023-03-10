@@ -1,8 +1,8 @@
 import time  # Подключение модуля для работы со временем
-
 from selenium import webdriver  # Подключение пакета selenium webdriver для управления браузером
 from selenium.webdriver.common.by import By  # Подключение модуля для поиска элементов на странице
-from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.service import Service as ChromeService  # Подключение класса, отвечающего за старт
+# и остановку webdriver
 from webdriver_manager.chrome import ChromeDriverManager  # Подключение менеджера автоматического обновления webdriver
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))  # Инициализация webdriver через
